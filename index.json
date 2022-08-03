@@ -1,0 +1,14 @@
+{
+    "recipes": {
+        "devim/health-check-bundle": [
+            "0.1"
+        ]
+    },
+    "branch": "master",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/devimteam/symfony-flex-recipes",
+        "origin_template": "{package}:{version}@github.com/devimteam/symfony-flex-recipes:main",
+        "recipe_template": "https://api.github.com/repos/devimteam/symfony-flex-recipes/contents/{package_dotted}.{version}.json"
+    }
+}
