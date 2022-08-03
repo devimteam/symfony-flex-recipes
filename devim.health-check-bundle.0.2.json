@@ -1,0 +1,17 @@
+{
+    "manifests": {
+        "devim/health-check-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Devim\\HealthCheckBundle\\HealthCheckBundle": [
+                    	"all"
+                    ]
+                },
+                "copy-from-package": {
+                    "config/": "%CONFIG_DIR%"
+                }
+      	    },
+            "ref": "ef4487eca7aed56b8d3961bf9e9ded9468e2f504"
+        }
+    }
+}
