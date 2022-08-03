@@ -1,0 +1,4 @@
+app.health_check:
+  path: /api/health
+  methods: GET
+  defaults: { _controller: devim.health_check_controller::getList }
