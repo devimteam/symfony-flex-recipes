@@ -15,17 +15,17 @@
         "config/packages/health_check.yaml": {
             "contents": [
                 "services:",
-                "  Devim\HealthCheckBundle\Service\Checks\RabbitMQ:",
+                "  Devim\\HealthCheckBundle\\Service\\Checks\\RabbitMQ:",
                 "    arguments:",
                 "      - '%env(MESSENGER_TRANSPORT_DSN)%'",
                 "    tags: [ 'health_check' ]",
                 "",
-                "  Devim\HealthCheckBundle\Service\Checks\Redis:",
+                "  Devim\\HealthCheckBundle\\Service\\Checks\\Redis:",
                 "    arguments:",
                 "      - '@snc_redis.default'",
                 "    tags: [ 'health_check' ]",
                 "",
-                "  Devim\HealthCheckBundle\Service\Checks\DoctrineDatabase:",
+                "  Devim\\HealthCheckBundle\\Service\\Checks\\DoctrineDatabase:",
                 "    arguments:",
                 "      - '@doctrine.dbal.default_connection'",
                 "    tags: [ 'health_check' ]",
@@ -42,7 +42,7 @@
             ]
         }
         },
-            "ref": "2669547818f98e29323ad5d2a8ad95fe0521a22c"
+            "ref": "276d9d852a7fe2206c4279d2c109c8967fcd81be"
         }
     }
 }
