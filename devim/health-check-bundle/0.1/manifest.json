@@ -1,8 +1,0 @@
-{
-    "bundles": {
-        "Devim\\HealthCheckBundle\\HealthCheckBundle": ["all"]
-    },
-    "copy-from-package": {
-        "config/": "%CONFIG_DIR%"
-    }
-}
