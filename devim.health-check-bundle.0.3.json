@@ -11,38 +11,38 @@
                     "config/": "%CONFIG_DIR%"
                 }
             },
-        "files": {
-        "config/packages/health_check.yaml": {
-            "contents": [
-                "services:",
-                "  Devim\\HealthCheckBundle\\Service\\Checks\\RabbitMQ:",
-                "    arguments:",
-                "      - '%env(MESSENGER_TRANSPORT_DSN)%'",
-                "    tags: [ 'health_check' ]",
-                "",
-                "  Devim\\HealthCheckBundle\\Service\\Checks\\Redis:",
-                "    arguments:",
-                "      - '@snc_redis.default'",
-                "    tags: [ 'health_check' ]",
-                "",
-                "  Devim\\HealthCheckBundle\\Service\\Checks\\DoctrineDatabase:",
-                "    arguments:",
-                "      - '@doctrine.dbal.default_connection'",
-                "    tags: [ 'health_check' ]",
-                ""
-            ]
-        },
-        "config/routes/health_check.yaml": {
-            "contents": [
-                "app.health_check:",
-                "  path: /api/health",
-                "  methods: GET",
-                "  defaults: { _controller: devim.health_check_controller::getList }",
-                ""
-            ]
-        }
-        },
-            "ref": "276d9d852a7fe2206c4279d2c109c8967fcd81be"
+            "files": {
+                "config/packages/health_check.yaml": {
+                    "contents": [
+                        "services:",
+                        "  Devim\\HealthCheckBundle\\Service\\Checks\\RabbitMQ:",
+                        "    arguments:",
+                        "      - '%env(MESSENGER_TRANSPORT_DSN)%'",
+                        "    tags: [ 'health_check' ]",
+                        "",
+                        "  Devim\\HealthCheckBundle\\Service\\Checks\\Redis:",
+                        "    arguments:",
+                        "      - '@snc_redis.default'",
+                        "    tags: [ 'health_check' ]",
+                        "",
+                        "  Devim\\HealthCheckBundle\\Service\\Checks\\DoctrineDatabase:",
+                        "    arguments:",
+                        "      - '@doctrine.dbal.default_connection'",
+                        "    tags: [ 'health_check' ]",
+                        ""
+                    ]
+                },
+                "config/routes/health_check.yaml": {
+                    "contents": [
+                        "app.health_check:",
+                        "  path: /api/health",
+                        "  methods: GET",
+                        "  defaults: { _controller: devim.health_check_controller::getList }",
+                        ""
+                    ]
+                }
+            },
+            "ref": "08d64660ca5aebb36d4fcd466e77454878795a70"
         }
     }
 }
