@@ -30,7 +30,8 @@
                         "      - '@doctrine.dbal.default_connection'",
                         "    tags: [ 'health_check' ]",
                         ""
-                    ]
+                    ],
+                    "executable": false
                 },
                 "config/routes/health_check.yaml": {
                     "contents": [
@@ -39,10 +40,11 @@
                         "  methods: GET",
                         "  defaults: { _controller: devim.health_check_controller::getList }",
                         ""
-                    ]
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "08d64660ca5aebb36d4fcd466e77454878795a70"
+            "ref": "83d0fe128207dba58b9eb355ea55367eda3df746"
         }
     }
 }
