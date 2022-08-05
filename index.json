@@ -1,7 +1,7 @@
 {
     "recipes": {
         "devim/health-check-bundle": [
-            "1.0",
+            "1.0.0"
         ]
     },
     "branch": "main",
