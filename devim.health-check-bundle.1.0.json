@@ -38,13 +38,13 @@
                         "app.health_check:",
                         "  path: /api/health",
                         "  methods: GET",
-                        "  defaults: { _controller: devim.health_check_controller::getList }",
+                        "  defaults: { _controller: devim.health_check.controller::getList }",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "b14e5e3981f7f00e0f6bf1fc7a4f2cd70a92a870"
+            "ref": "26d9e926ded287da28c2dee70b55938a21f09bac"
         }
     }
 }
